@@ -18,7 +18,7 @@
 //Переопредели меня
 include $_SERVER['DOCUMENT_ROOT'] . '/App.php';
 //Переопредели меня
-include "main-page-setup.php";
+include "phplab5-page-setup.php";
 //Переопредели меня
 App::includeHeader();
 

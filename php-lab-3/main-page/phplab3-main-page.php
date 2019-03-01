@@ -8,7 +8,7 @@
     <title>PHP Template</title>
 
     <link rel="stylesheet" href="../../php-template/common/compose.css">
-    <link rel="stylesheet" href="main-page.css">
+    <link rel="stylesheet" href="phplab3-main-page.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 include $_SERVER['DOCUMENT_ROOT'] . '/App.php';
 
 //Собственно логика данной страницы и переопределениее дефолтной установки
-include "main-page-setup.php";
+include "phplab3-page-setup.php";
 
 
 //Подгрузка универсального header'a из template

@@ -68,6 +68,34 @@ div, nav, header, footer {
 
 }
 
+.segmented-control {
+
+}
+
+.segmented-control__item {
+    color: var(--dark-theme_background);
+    background: var(--light-theme_background);
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.segmented-control__item:not(:last-child) {
+    border-right: 1px solid var(--dark-theme_secondary-color);
+}
+.segmented-control__item:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.segmented-control__item:last-child {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+
+.segmented-control__item_active, .segmented-control__item:hover {
+    background: var(--light-theme_background-hover);
+}
 
 
 /*ТАБЛИЦА*/

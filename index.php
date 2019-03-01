@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Labs Menu</title>
 
-    <link rel="stylesheet" href="labs-menu.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="defaults.css">
 
 </head>

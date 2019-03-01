@@ -8,7 +8,7 @@
     <title>L2. Калачев Глеб, 181-321</title>
 
     <link rel="stylesheet" href="../php-template/common/compose.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phplab2-page.css">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
 
 include $_SERVER['DOCUMENT_ROOT'] . '/App.php';
 
-include "main-page-setup.php";
+include "phplab2-page-setup.php";
 
 App::includeHeader();
 ?>
