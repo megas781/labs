@@ -1,0 +1,11 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    padding-left: 16px;
+}
+
+.breadcrumbs__link {
+
+}

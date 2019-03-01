@@ -1,0 +1,97 @@
+.labs-view {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.labs-view__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.labs-view__column:not(:last-child) {
+    margin-right: 64px;
+}
+.column {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.discipline {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.labs-view__discipline {
+    width: 300px;
+}
+
+.discipline__title {
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.discipline__labs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.discipline__lab {
+    margin-bottom: 24px;
+}
+
+.lab {
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.lab__title {
+    margin: 0;
+    padding: 8px 8px;
+    font-size: 1.1rem;
+}
+
+.lab__link {
+    word-break: break-all;
+}
+
+.lab__tags {
+    padding: 8px 0;
+}
+
+.lab__tag {
+
+    display: inline-block;
+    padding: 6px 8px;
+    background: #0B0974;
+    color: white;
+    margin-bottom: 3px;
+    font-size: 0.85rem;
+
+}
+
+
+.lab__tag:hover {
+    cursor: pointer;
+    background: #0f0c9c;
+}
+
+.lab__date {
+    /*padding-top: 4px;*/
+    text-align: right;
+}

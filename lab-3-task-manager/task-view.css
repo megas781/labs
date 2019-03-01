@@ -1,0 +1,119 @@
+.task-view-outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task-view {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.task-view__column {
+    width: 300px;
+}
+.task-view__column:not(:last-child){
+    /*border-right: 1px solid black;*/
+}
+
+.task-column {
+
+    padding: 16px;
+
+}
+
+.task-column__title {
+    text-align: center;
+}
+
+.task-column__task-number {
+    color: #7e7e7e;
+}
+
+
+
+.task-column__add-task-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 16px;
+    /*border-bottom: 1px solid #e1e1e1;*/
+}
+.task-column__add-task-button:hover {
+    background: lightgreen;
+}
+
+
+.task-column__add-task-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.task-column__add-task-button-title {
+    font-size: 1.3rem;
+    /*display: block;*/
+    vertical-align: middle;
+}
+/*.task-column__add-task-button-title::after {*/
+    /*content: '';*/
+    /*background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/archive/2/22/20110815144330%21Greek_cross.svg/120px-Greek_cross.svg.png");*/
+    /*background-size: cover;*/
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*!*margin-top: 4px;*!*/
+    /*margin-left: 16px;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.task-column__add-task-button-image {*/
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*margin-left: 16px;*/
+/*}*/
+
+
+
+.task {
+    background: #d2f9e4;
+    padding: 12px 14px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.task-column__task {
+    margin-bottom: 16px;
+}
+
+.task__title {
+    font-size: 1.3rem;
+    margin: 0;
+
+}
+
+
+.task__body {
+
+}
+
+.task__meta-info {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.task__control-button {
+    height: 24px;
+    width: 24px;
+    margin-left: 4px;
+    background-size: contain;
+}
+.task__control-button-edit {
+    background-image: url("https://addons.cdn.mozilla.net/user-media/addon_icons/668/668826-64.png?modified=1447175252");
+}
+
+.task__control-button-delete {
+    background-image: url("http://www.uidownload.com/files/355/1005/69/trash-can-black-symbol-icon.png");
+}
+
+
+

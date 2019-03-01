@@ -1,0 +1,5 @@
+@import "default-styles/defaults.css";
+@import "header/header.css";
+@import "breadcrumbs/breadcrumbs.css";
+@import "sidebar/sidebar.css";
+@import "footer/footer.css";

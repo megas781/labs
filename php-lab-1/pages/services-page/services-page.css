@@ -1,0 +1,36 @@
+@import "../../common/compose.css";
+
+.services {
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.service {
+    position: relative;
+}
+
+.serivces__service {
+    width: 340px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service__image {
+    height: 200px;
+    width: 200px;
+}
+
+.service__paragraph {
+    text-align: center;
+    margin-top: 0;
+}
+
+.service__detail-link {
+    position: absolute;
+    bottom: -16px;
+    right: 16px;
+}

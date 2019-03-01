@@ -1,0 +1,45 @@
+/*ЭТИ СТИЛИ ИМПОРТИРУЮТСЯ ОБЯЗАТЕЛЬНО ВО ВСЕ СРАНИЦЫ*/
+
+:root {
+    --wrapper-indent: 60px;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: Arial;
+    color: black;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+a {
+    
+}
+
+div, nav, header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+._flex-row {
+    flex-direction: row;
+}
+
+._flex-centering {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper {
+    padding-left: var(--wrapper-indent);
+    padding-right: var(--wrapper-indent);
+}
+
+.page-title {
+
+}

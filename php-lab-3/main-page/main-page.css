@@ -1,0 +1,91 @@
+.page {
+    padding: 0 32px;
+}
+
+.login-form {
+
+}
+
+.numpad-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+}
+
+input {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    font-family: Arial;
+}
+
+
+.numpad {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    /*background: yellow;*/
+}
+
+.numpad__display {
+    border: 2px solid black;
+    /*padding: 16px;*/
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: white;
+
+    margin-bottom: 8px;
+}
+
+.numpad__input-view {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.numpad__number-row {
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.numpad__button {
+    background: lightgray;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+.numpad__button:hover {
+    background: #e8e8e8;
+}
+
+.numpad__digit-button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+.numpad__digit-button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.numpad__cancel-button {
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+}

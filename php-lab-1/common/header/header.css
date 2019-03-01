@@ -1,0 +1,60 @@
+.header {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 8px;
+    background: darkgreen;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    box-shadow: 0 2px 5px black;
+}
+
+/*Надо подумать, как реализовать селектор ниже, чтобы было по BEM'у*/
+.header * {
+    color: white;
+}
+
+.header__brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.header__logo-image {
+    height: 60px;
+    width: 60px;
+}
+
+.header__nav {
+    margin-left: 18px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 8px 18px;
+}
+
+.header__nav-link:hover {
+    /*text-decoration: underline;*/
+    color: #c7c7c7;
+}
+
+.header__nav-link_active {
+    color: #c7c7c7;
+}
+.header__nav-link_active:hover {
+    text-decoration: none;
+}
+
+.header__nav-link.selected {
+
+}

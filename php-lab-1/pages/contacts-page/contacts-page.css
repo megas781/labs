@@ -1,0 +1,23 @@
+@import "../../common/compose.css";
+
+.contact {
+
+}
+.contacts-page__contact {
+    margin-bottom: 16px;
+    /*justify-content: flex-start;*/
+}
+
+.contact__left-side {
+    flex-direction: column;
+}
+
+.contact__image {
+    height: 180px;
+    width: auto;
+}
+
+.contact__table {
+    margin-right: 16px;
+    border-spacing: 16px;
+}

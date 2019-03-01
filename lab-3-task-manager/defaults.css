@@ -1,0 +1,82 @@
+/*
+Палитра такова
+
+#1D1AB2	#323086	#0B0974	#514ED9	#7573D9
+
+*/
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+body * {
+    /*font-family: "Comic Sans MS";*/
+    font-family: Arial;
+}
+
+
+
+.flex-centering {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: #0B0974;
+    color: white;
+}
+
+.header__brand-wrapping-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__brand-image {
+    height: 60px;
+    width: auto;
+}
+
+.header__brand-title {
+    margin-left: 16px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background: #0B0974;
+    color: #cccccc;
+}
+.footer__info {
+    padding: 16px;
+    font-size: 0.85rem;
+}
+
+.footer__info-line {
+    display: block;
+}
+
+
+
+.task__controls {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.control-button {
+
+}
+.control-button:hover {
+    cursor: pointer;
+}
+
+.text-input {
+
+}
