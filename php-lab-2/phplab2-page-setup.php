@@ -1,6 +1,6 @@
 <?php
 App::$headerTitle = 'PHP. Лабораторная #2. Анализ математической функции';
-App::$footerInnerContent = '';
+App::$footerContent = '';
 
 $param = 20;
 $step = 1;

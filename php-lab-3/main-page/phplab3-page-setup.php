@@ -39,6 +39,6 @@ if (array_key_exists('input-value', $_GET)) {
 
 
 //Не знаю, насклько это правильно, но сейчас я после всех вычислений могу наконец-то установить контент header'a
-App::$footerInnerContent = $tapCounter;
+App::$footerContent = $tapCounter;
 
 ?>

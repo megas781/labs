@@ -1,6 +1,6 @@
 <footer class="footer js-footer _flex-centering">
 
-    <?php echo App::$footerInnerContent; ?>
+    <?php echo App::$footerContent; ?>
 
 
     <script>

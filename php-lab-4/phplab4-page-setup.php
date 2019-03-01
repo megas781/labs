@@ -3,7 +3,7 @@ include 'OldTableBuilder.php';
 
 
 App::$headerTitle = 'PHP. Лабораторная #4. Динамическое построение таблиц';
-App::$footerInnerContent = 'Зуй';
+App::$footerContent = 'Зуй';
 
 //$headerTitle = 'PHP. Лабораторная #4. Динамическое построение таблиц';
 //$footerInnerContent = '';

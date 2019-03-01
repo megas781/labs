@@ -12,7 +12,7 @@
 
 
 <!--    Здесь у нас выводятся кастомные элементы для отдельных страниц-->
-    <?php echo App::$headerInnerContent; ?>
+    <?php echo App::$headerContent; ?>
 
 
 </header>
