@@ -9,8 +9,9 @@
     --dark-theme_link: #00a9ff;
 
     --light-theme_background: #f2f2f2;
-    --light-theme_background-hover: #dbdbdb;
+    --light-theme_background-hover: #d4d4d4;
     --light-theme_font: #303030;
+    --light-theme_sidebar-background: #e3e3e3;
 
 
 
@@ -52,11 +53,34 @@ div, nav, header, footer {
 ._flex-row {
     flex-direction: row;
 }
+._flex-align-start {
+    align-items: flex-start;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+._flex-column {
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
 
 ._flex-centering {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+._flex-growing {
+    flex-grow: 1;
 }
 
 .wrapper {
@@ -114,5 +138,23 @@ td {
 td:not(:last-child) {
     border-right: 1px solid #c1c1c1;
 }
+
+.td_title {
+    background: #494949;
+    color: var(--dark-theme_font);
+}
+
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item {
+
+}
+
 
 

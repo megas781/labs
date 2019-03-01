@@ -86,11 +86,20 @@
 .labs-view__column:not(:last-child) {
     margin-right: 64px;
 }
+
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 .column {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
+
 
 
 .discipline {

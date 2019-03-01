@@ -1,0 +1,36 @@
+.sidebar {
+    background: var(--light-theme_sidebar-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar__title {
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 4px;
+}
+
+.sidebar__list {
+
+}
+
+.sidebar__list-item {
+
+}
+
+.sidebar__list-item:hover {
+    background: var(--light-theme_background-hover);
+}
+
+.sidebar__list-link {
+    padding: 8px;
+    display: block;
+    color: var(--light-theme_font);
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar__list-link_active {
+    background: var(--light-theme_background-hover);
+}

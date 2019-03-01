@@ -13,7 +13,13 @@ class TableBuilder
 
             for ($col = 1; $col <= 9; $col++) {
 
-                echo "<td>";
+                if ($row === 1 or $col === 1) {
+                    echo "<td class='td_title'>";
+                } else {
+                    echo "<td>";
+                }
+
+
 
                 echo $row * $col;
 
@@ -25,6 +31,30 @@ class TableBuilder
         }
 
         echo "</table>\n";
+    }
+
+    static function buildMultiplicationTableWithDivs() {
+
+        echo "<div class='column'>\n";
+
+        for ($row = 1; $row <= 9; $row++) {
+
+            echo "<div class='row'>\n";
+
+            for ($col = 1; $col <= 9; $col++) {
+
+                echo "<div class='_flex-centering'>";
+
+                echo $row * $col;
+
+                echo "</div>\n";
+
+            }
+
+            echo "</div>\n";
+        }
+
+        echo "</div>\n";
     }
 
 }

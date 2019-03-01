@@ -24,8 +24,21 @@ $layoutTypes = [
 ];
 
 
-$selectedLayoutTypeId = 'table-layout';
-$sidebarOption = '';
+//setup selectedLayoutTypeId
+if (isset($_GET['layout-type'])) {
+    $selectedLayoutTypeId = $_GET['layout-type'];
+} else {
+    $selectedLayoutTypeId = '';
+}
+
+//setup pickedDigit
+if (isset($_GET['picked-digit'])) {
+    $pickedDigit = (int)$_GET['picked-digit'];
+} else {
+    $pickedDigit = 1;
+}
+
+
 
 
 //Установка headerContent
@@ -38,17 +51,9 @@ $sidebarOption = '';
     for ($i = 0; $i < count($layoutTypes); $i++) {
         $layout = $layoutTypes[$i];
         $item = $doc->createElement('a');
-        $item->setAttribute('href', "?selected-layout=" . $layout->id);
-//        echo $layout->id . "<br>";
-//        echo $selectedLayoutTypeId . "<br>";
-//
-//        if ($layout->id === $selectedLayoutTypeId) {
-//            echo 'равны';
-//        } else {
-//            echo 'не равны';
-//        }
-
+        $item->setAttribute('href', "?layout-type=" . $layout->id . '&picked-digit=' . $pickedDigit);
         $item->setAttribute('class', "segmented-control__item " . ($layout->id === $selectedLayoutTypeId ? 'segmented-control__item_active' : ''));
+
         $item->textContent = $layout->label;
         $segmentedControl->appendChild($item);
     }
