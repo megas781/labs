@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHP Template</title>
 
-<!--    Переопредели меня-->
+    <!--    Переопредели меня-->
     <link rel="stylesheet" href="../php-template/common/compose.css">
     <link rel="stylesheet" href="phplab5-page.css">
 </head>
@@ -27,30 +27,31 @@ App::includeHeader();
 <!-- Поехали! -->
 
 
-
-
 <main class="phplab5__main">
-<!--    <div class="_flex-row">-->
-        <aside class="sidebar phplab5__sidebar">
-            <h3 class="sidebar__title">Таблицы умножения</h3>
-            <ul class="list sidebar__list">
+    <!--    <div class="_flex-row">-->
+    <aside class="sidebar phplab5__sidebar">
+        <h3 class="sidebar__title">Таблицы умножения</h3>
+        <ul class="list sidebar__list">
 
-                <?php
-                    for ($i = 1; $i <= 9; $i++) {
-                        echo "<li class='list__item sidebar__list-item'><a href='?layout-type=". $selectedLayoutTypeId . "&picked-digit=". $i ."' class='list__link sidebar__list-link " . ($i === $pickedDigit ? 'sidebar__list-link_active' : '');
-                        echo "'>";
-                        echo $i === 1 ? 'Все' : 'Умножение на ' . $i;
-                        echo "</a></li>";
-                    }
-                ?>
-            </ul>
-        </aside>
-        <div class="_flex-growing phplab5__content-view">
-            <?php TableBuilder::buildMultiplicationTable() ?>
-        </div>
-<!--    </div>-->
+            <?php
+            for ($i = 1; $i <= 9; $i++) {
+                echo "<li class='list__item sidebar__list-item'><a href='?layout-type=" . $selectedLayoutTypeId . "&picked-digit=" . $i . "' class='list__link sidebar__list-link " . ($i === $pickedDigit ? 'sidebar__list-link_active' : '');
+                echo "'>";
+                echo $i === 1 ? 'Все' : 'Умножение на ' . $i;
+                echo "</a></li>";
+            }
+            ?>
+        </ul>
+    </aside>
+    <div class="_flex-growing phplab5__content-view">
+        <?php
+
+        PhpLab5::drawView($selectedLayoutTypeId, $pickedDigit);
+
+        ?>
+    </div>
+    <!--    </div>-->
 </main>
-
 
 
 <?php

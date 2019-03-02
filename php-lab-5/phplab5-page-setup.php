@@ -1,6 +1,6 @@
 <?php
 include "PhpLab5.php";
-include "TableBuilder.php";
+
 //Образец
 //Кастомная установка для страницы
 App::$headerTitle = 'PHP. Лабораторная #5. Таблицы умножения';
@@ -18,6 +18,15 @@ class LayoutType
     }
 }
 
+function isDigit($any)
+{
+    if (is_numeric($any) and (int)$any >= 0 and (int)$any <= 9) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 $layoutTypes = [
     new LayoutType('table-layout', 'Табличная верстка'),
     new LayoutType('block-layout', 'Блочная верстка')
@@ -32,13 +41,11 @@ if (isset($_GET['layout-type'])) {
 }
 
 //setup pickedDigit
-if (isset($_GET['picked-digit'])) {
+if (isset($_GET['picked-digit']) and isDigit($_GET['picked-digit'])) {
     $pickedDigit = (int)$_GET['picked-digit'];
 } else {
     $pickedDigit = 1;
 }
-
-
 
 
 //Установка headerContent

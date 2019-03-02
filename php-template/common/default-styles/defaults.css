@@ -143,6 +143,9 @@ td:not(:last-child) {
     background: #494949;
     color: var(--dark-theme_font);
 }
+.td_title > a {
+    color: var(--dark-theme_font);
+}
 
 
 
