@@ -10,24 +10,24 @@
     padding: 0 100px;
 }
 
-.task-view__column {
+.issue-view__column {
     width: 300px;
 }
-.task-view__column:not(:last-child){
+.issue-view__column:not(:last-child){
     /*border-right: 1px solid black;*/
 }
 
-.task-column {
+.issue-column {
 
     padding: 16px;
 
 }
 
-.task-column__title {
+.issue-column__title {
     text-align: center;
 }
 
-.task-column__task-number {
+.issue-column__task-number {
     color: #7e7e7e;
 }
 
@@ -75,43 +75,43 @@
 
 
 
-.task {
+.issue {
     background: #d2f9e4;
     padding: 12px 14px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-.task-column__task {
+.issue-column__issue {
     margin-bottom: 16px;
 }
 
-.task__title {
+.issue__title {
     font-size: 1.3rem;
     margin: 0;
 
 }
 
 
-.task__body {
+.issue__body {
 
 }
 
-.task__meta-info {
+.issue__meta-info {
     font-size: 0.85rem;
     margin-bottom: 8px;
 }
 
-.task__control-button {
+.issue__control-button {
     height: 24px;
     width: 24px;
     margin-left: 4px;
     background-size: contain;
 }
-.task__control-button-edit {
+.issue__control-button-edit {
     background-image: url("https://addons.cdn.mozilla.net/user-media/addon_icons/668/668826-64.png?modified=1447175252");
 }
 
-.task__control-button-delete {
+.issue__control-button-delete {
     background-image: url("http://www.uidownload.com/files/355/1005/69/trash-can-black-symbol-icon.png");
 }
 

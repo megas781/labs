@@ -29,38 +29,63 @@ class PhpLab5
     }
 
 
-    static function buildMultiplicationTable()
-    {
+//    static function buildMultiplicationTable()
+//    {
+//
+//        echo "<table>\n";
+//
+//        for ($row = 1; $row <= 9; $row++) {
+//
+//            echo "<tr>\n";
+//
+//            for ($col = 1; $col <= 9; $col++) {
+//
+//                if ($row === 1 or $col === 1) {
+//                    echo "<td class='td_title'>";
+//                } else {
+//                    echo "<td>";
+//                }
+//
+//                echo self::getDigitLink($row) . '*' . self::getDigitLink($row) . '=' . self::getDigitLink($row * $col);
+//
+//                echo "</td>\n";
+//
+//            }
+//
+//            echo "</tr>\n";
+//        }
+//
+//        echo "</table>\n";
+//    }
 
-        echo "<table>\n";
+    static function buildMultiplicationTable() {
 
-        for ($row = 1; $row <= 9; $row++) {
+        echo "<table class='main-table'>";
+        for ($i = 1; $i <= 2; $i++) {
 
-            echo "<tr>\n";
+            echo "<tr>";
 
-            for ($col = 1; $col <= 9; $col++) {
+            for ($j = 1; $j <= 4; $j++) {
 
-                if ($row === 1 or $col === 1) {
-                    echo "<td class='td_title'>";
-                } else {
-                    echo "<td>";
-                }
+                echo "<td>";
 
-                echo self::getDigitLink($row * $col);
+                self::buildOneDigitMultiplicationTable($i * $j + 1);
 
-                echo "</td>\n";
+                echo "</td>";
 
             }
 
-            echo "</tr>\n";
+            echo "</tr>";
+
         }
 
-        echo "</table>\n";
+        echo "</table>";
     }
+
 
     static function buildOneDigitMultiplicationTable($digit)
     {
-        echo "<table>\n";
+        echo "<table class='digit-table'>\n";
 
         for ($row = 1; $row <= 9; $row++) {
 
@@ -78,26 +103,38 @@ class PhpLab5
     static function buildMultiplicationTableWithDivs()
     {
 
-        echo "<div class='row'>\n";
 
-        for ($row = 1; $row <= 9; $row++) {
+        echo "<div class='column'>";
+        for ($mainRowIndex = 1; $mainRowIndex <= 2; $mainRowIndex++) {
 
-            echo "<div class='column digit-table__column'>\n";
-
-            for ($col = 1; $col <= 9; $col++) {
-
-                echo "<div class='_flex-centering divCell'>";
-
-                echo "<span>" . self::getDigitLink($row) . '*' . self::getDigitLink($col) . '=' . self::getDigitLink($row * $col) . "</span>";
-
-                echo "</div>\n";
-
+            echo "<div class='row'>";
+            for ($i = 1; $i <= 4; $i++) {
+                self::buildOneDigitMultiplicationTableWithDivs($mainRowIndex * $i + 1);
             }
-
-            echo "</div>\n";
+            echo "</div>";
         }
+        echo "</div>";
 
-        echo "</div>\n";
+//        echo "<div class='row'>\n";
+//
+//        for ($row = 1; $row <= 9; $row++) {
+//
+//            echo "<div class='column digit-table__column'>\n";
+//
+//            for ($col = 1; $col <= 9; $col++) {
+//
+//                echo "<div class='_flex-centering divCell'>";
+//
+//                echo "<span>" . self::getDigitLink($row) . '*' . self::getDigitLink($col) . '=' . self::getDigitLink($row * $col) . "</span>";
+//
+//                echo "</div>\n";
+//
+//            }
+//
+//            echo "</div>\n";
+//        }
+//
+//        echo "</div>\n";
     }
 
     static function buildOneDigitMultiplicationTableWithDivs($digit)

@@ -4,6 +4,22 @@
 
 .pseudo-slider {
     position: relative;
+    background-image: url("../../media/баннер-1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: fixed;
+
+    height: 400px;
+}
+
+.dim {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .pseudo-slider__image {

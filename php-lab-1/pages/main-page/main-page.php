@@ -20,7 +20,8 @@ include('../../common/breadcrumbs/breadcrumbs.php');
 
 
 <div class="pseudo-slider _flex-centering">
-    <img src="<?php echo getAccordingToTime('../../media/баннер-1.jpg','../../media/баннер-2.jpg') ?>" class="pseudo-slider__image" alt="">
+<!--    <img src="--><?php //echo getAccordingToTime('../../media/баннер-1.jpg','../../media/баннер-2.jpg') ?><!--" class="pseudo-slider__image" alt="">-->
+    <div class="dim"></div>
     <h1 class="pseudo-slider__title">Качественный ремонт грузовых автомобилей</h1>
 </div>
 

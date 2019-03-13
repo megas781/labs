@@ -123,21 +123,33 @@ div, nav, header, footer {
 
 
 /*ТАБЛИЦА*/
-table {
-    border-collapse: collapse;
+.main-table {
+    border-spacing: 8px;
 }
 
-tr:nth-child(2n - 1) {
-    background: #dfdfdf;
+.digit-table {
+    border: 1px solid #4DADDF;
+    border-spacing: 8px;
+    background: #EEEFF8;
+
+    color: #4C4FA5;
+    font-size: 1.3rem;
+
+    padding: 4px 16px;
+
 }
 
-td {
-    padding: 8px 16px;
-}
+/*tr:nth-child(2n - 1) {*/
+    /*background: #dfdfdf;*/
+/*}*/
 
-td:not(:last-child) {
-    border-right: 1px solid #c1c1c1;
-}
+/*td {*/
+    /*padding: 8px 16px;*/
+/*}*/
+
+/*td:not(:last-child) {*/
+    /*border-right: 1px solid #c1c1c1;*/
+/*}*/
 
 .td_title {
     background: #494949;

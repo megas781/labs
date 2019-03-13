@@ -3,9 +3,9 @@ App::$headerTitle = 'PHP. Лабораторная #2. Анализ матема
 App::$headerContent ='';
 App::$footerContent = '';
 
-$param = 20;
+$param = -50;
 $step = 1;
-$n = 3;
+$n = 100;
 
 $distributeType = 'D';
 

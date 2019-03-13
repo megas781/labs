@@ -16,12 +16,15 @@
 
 .digit-table__column {
     align-items: stretch;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    margin-right: 8px;
 }
 
 .divCell {
     padding: 8px;
     display: block;
-    margin: 4px;
+    /*margin: 4px;*/
     text-align: center;
 }
 

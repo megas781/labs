@@ -16,7 +16,6 @@ body * {
 }
 
 
-
 .flex-centering {
     display: flex;
     justify-content: space-around;
@@ -53,6 +52,7 @@ body * {
     background: #0B0974;
     color: #cccccc;
 }
+
 .footer__info {
     padding: 16px;
     font-size: 0.85rem;
@@ -63,8 +63,7 @@ body * {
 }
 
 
-
-.task__controls {
+.issue__controls {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -73,10 +72,25 @@ body * {
 .control-button {
 
 }
+
 .control-button:hover {
     cursor: pointer;
 }
 
 .text-input {
 
+}
+
+
+#issue > div {
+    background: lightgray;
+    margin-bottom: 16px;
+}
+
+#issue > div > *:nth-child(1) {
+    font-weight: bold;
+}
+
+#issue > div > *:nth-child(2) {
+    font-style: italic;
 }

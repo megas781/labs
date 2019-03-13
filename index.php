@@ -126,6 +126,16 @@
                         <span class="lab__date">26 февраля 2019</span>
                     </div>
 
+                    <div class="lab discipline__lab">
+                        <h4 class="lab__title">Лаб. #5. Интерактивная таблица умножения</h4>
+                        <a href="http://labs.std-699.ist.mospolytech.ru/php-lab-5/phplab5-page.php" class="lab__link" target="_blank">http://labs.std-699.ist.mospolytech.ru/php-lab-5/phplab5-page.php</a>
+                        <div class="lab__tags">
+                            <span class="lab__tag">php</span>
+                            <span class="lab__tag">таблицы</span>
+                        </div>
+                        <span class="lab__date">3 марта 2019</span>
+                    </div>
+
                 </div>
             </div>
         </div>

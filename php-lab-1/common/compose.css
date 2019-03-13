@@ -1,4 +1,4 @@
-@import "http://std-699.ist.mospolytech.ru/php-lab-1/common/default-styles/defaults.css";
+@import "default-styles/defaults.css";
 @import "header/header.css";
-@import "http://std-699.ist.mospolytech.ru/php-lab-1/common/breadcrumbs/breadcrumbs.css";
-@import "http://std-699.ist.mospolytech.ru/php-lab-1/common/footer/footer.css";
+@import "breadcrumbs/breadcrumbs.css";
+@import "footer/footer.css";
